@@ -3,7 +3,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class BankAccount {
 	
-	private double balance;
+    private double balance;
     private final ReentrantLock lock = new ReentrantLock();
 
     public BankAccount(double initialBalance) {

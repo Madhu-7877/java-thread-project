@@ -64,9 +64,6 @@ public class BankAccount {
 
         // Shutdown the executor and wait for tasks to complete
         executor.shutdown();
-        while (!executor.isTerminated()) {
-            // Wait for all tasks to finish
-        }
 
         // Print the final balance
         System.out.println("Final balance: " + account.getBalance());

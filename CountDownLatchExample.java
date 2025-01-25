@@ -30,4 +30,11 @@ public class CountDownLatchExample {
         latch.await();
         System.out.println("All tasks completed.");
     }
+
+    public static void main(String[] args) throws InterruptedException {
+        int numWorkers = 5; // Number of worker threads
+
+        System.out.println("Starting tasks...");
+        executeTasks(numWorkers); // Start and wait for tasks to complete
+    }
 }

@@ -26,7 +26,7 @@ public class CountDownLatchExample {
             }).start();
         }
 
-        // Main thread waits for all workers to finish
+        // Main thread waits until all workers to finish
         latch.await();
         System.out.println("All tasks completed.");
     }
